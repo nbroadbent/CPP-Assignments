@@ -99,6 +99,6 @@ double sdCalculations(vector<int> ascii, double mean, int num)
 /// Displays text.
 void display(string word, double mean, double sd)
 {
-	cout << "Moyenne de " + word + " : " << mean << "\n";
-	cout << "Ecart-type: " << sd << "\n";
+	cout << "Mean of " + word + " : " << mean << "\n";
+	cout << "Standard deviation: " << sd << "\n";
 }
