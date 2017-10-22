@@ -1,2 +1,2 @@
-# C-Assignment-1
-Wordstore
+# C++-Assignments
+My c++ assignments from university.
