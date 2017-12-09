@@ -11,29 +11,29 @@ using namespace std;
 
 Compte::Compte(double num) : solde(num)
 {
-    if (solde < 0.0)
-    {
-        cout << "Erreur: Solde ne peut pas être moins de zero" << endl;
-        solde = 0.0;
-    }
+	if (solde < 0.0)
+	{
+		cout << "Erreur: Solde ne peut pas être moins de zero" << endl;
+		solde = 0.0;
+	}
 }
 
 void Compte::credit(double num)
 {
-    solde += num;
+	solde += num;
 }
 
 bool Compte::debit(double num)
 {
 
-    if ((solde - num) >= 0.0)
-    {
-        solde -= num;
-        return true;
-    }
+	if ((solde - num) >= 0.0)
+	{
+		solde -= num;
+		return true;
+	}
 
-    cout << "« Debit amount exceeded account balance »" << endl;
-    return false;
+	cout << "« Debit amount exceeded account balance »" << endl;
+	return false;
 
 }
 
