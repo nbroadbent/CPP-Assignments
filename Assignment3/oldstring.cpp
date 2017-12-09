@@ -73,7 +73,6 @@ double oldstring::stdDev(const char* word, const double mean)
  */
 std::string oldstring::getWord(char** word)
 {
-
     std::string strWord = "";
     while (**word != ' ' && **word != NULL)
     {
@@ -88,5 +87,4 @@ std::string oldstring::getWord(char** word)
     }
 
     return strWord;
-
 }
