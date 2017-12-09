@@ -11,12 +11,9 @@
 // Using namespace oldstring to make organization easier.
 namespace oldstring
 {
-
-    // Function prototypes.
     double mean(const char*);
     double stdDev(const char*, const double);
     std::string getWord(char**);
-
 }
 
 #endif // OLDSTRING_H
