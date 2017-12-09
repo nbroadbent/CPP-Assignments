@@ -5,20 +5,19 @@
 
 #ifndef COMPTECHEQUE_H
 #define COMPTECHEQUE_H
-
 #include "compte.h"
 
 class CompteCheque : public Compte
 {
 private:
-    double frais;
+	double frais;
 
 public:
-    CompteCheque(double amount = 0.0, double fee = 0.0);
+	CompteCheque(double amount = 0.0, double fee = 0.0);
 	CompteCheque(CompteCheque &cheque);
-    void credit(double);
-    bool debit(double);
-    std::string getAccountType();
+	void credit(double);
+	bool debit(double);
+	std::string getAccountType();
 	double getFees();
 };
 
