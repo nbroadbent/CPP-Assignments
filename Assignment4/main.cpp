@@ -38,7 +38,7 @@ int main()
 	cout << "Testing CompteCheque" << endl;
 	cout << "----------------------------------" << endl;
 
-    CompteCheque b(10, 3);
+	CompteCheque b(10, 3);
 	CompteCheque *ptrB = &b;
 	cout << "Initial Balance: " << b.getBalance() << "	Transaction Fees: " << b.getFees() << endl;
 	cout << endl;
