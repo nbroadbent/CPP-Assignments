@@ -11,12 +11,12 @@
 class CompteEpargne : public Compte
 {
 private:
-    double interet;
+	double interet;
 
 public:
-    CompteEpargne(double amount = 0.0, double interest = 0.0);
-    double calculateInterest();
-    std::string getAccountType();
+	CompteEpargne(double amount = 0.0, double interest = 0.0);
+	double calculateInterest();
+	std::string getAccountType();
 	double getInterest();
 };
 
