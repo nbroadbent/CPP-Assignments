@@ -11,21 +11,21 @@ using namespace std;
 
 CompteEpargne::CompteEpargne(double amount, double interest) : Compte(amount), interet(interest)
 {
-    if (solde < 0.0)
-    {
-        cout << "Erreur: Solde ne peut pas être moins de zero" << endl;
-        solde = 0.0;
-    }
-    if (interet < 0.0)
-    {
-        cout << "Erreur: Taux d'intérêt ne peut pas être moins de zero" << endl;
-        interet = 0.0;
-    }
+	if (solde < 0.0)
+	{
+		cout << "Erreur: Solde ne peut pas être moins de zero" << endl;
+		solde = 0.0;
+	}
+	if (interet < 0.0)
+	{
+		cout << "Erreur: Taux d'intérêt ne peut pas être moins de zero" << endl;
+		interet = 0.0;
+	}
 }
 
 double CompteEpargne::calculateInterest()
 {
-    return solde * (interet / 100);
+    	return solde * (interet / 100);
 }
 
 double CompteEpargne::getInterest()
