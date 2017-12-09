@@ -11,12 +11,12 @@
 class CompteCheque : public Compte
 {
 private:
-    double frais;
+	double frais;
 
 public:
-    CompteCheque(double amount = 0.0, double fee = 0.0);
-    void credit(double);
-    bool debit(double);
+	CompteCheque(double amount = 0.0, double fee = 0.0);
+	void credit(double);
+	bool debit(double);
 	double getFees();
 };
 
