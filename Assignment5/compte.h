@@ -11,13 +11,13 @@
 class Compte
 {
 protected:
-    double solde; // declaring protected so we can access from subclasses
+	double solde; // declaring protected so we can access from subclasses
 
 public:
-    Compte(double num = 0.0);
-    virtual void credit(double); // virtual so it can be redefined in subclasses
-    virtual bool debit(double); // virtual so it can be redefined in subclasses
-    virtual std::string getAccountType(); // virtual so it can be redefined in subclasses
+	Compte(double num = 0.0);
+	virtual void credit(double); // virtual so it can be redefined in subclasses
+	virtual bool debit(double); // virtual so it can be redefined in subclasses
+	virtual std::string getAccountType(); // virtual so it can be redefined in subclasses
 	double getBalance(); // Getter for solde
 };
 
